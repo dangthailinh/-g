@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity Run 2024</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0 0 60px 0; /* Add padding to prevent footer overlap */
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav {
+            text-align: center;
+            background-color: #333;
+            padding: 10px 0;
+            display: flex;
+            flex-wrap: wrap; /* Make the menu responsive */
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: #333; /* Changed to a softer color */
+        }
+        .container {
+            padding: 20px;
+        }
+        img {
+            max-width: 100%; /* Ensure image is responsive */
+            height: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 600px) {
+            nav a {
+                padding: 10px;
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Home Page -->
+<div id="home">
+    <header>
+        <h1>Welcome to Charity Run 2024!</h1>
+        <p>Join us for a fun-filled charity run at SECC, Hochiminh City on 11th October 2024.</p>
+    </header>
+
+    <nav>
+        <a href="#home" aria-label="Home">Home</a>
+        <a href="#program-events" aria-label="Program Events">Program Events</a>
+        <a href="#general-info" aria-label="General Information">General Information</a>
+        <a href="#participation-info" aria-label="Participation Info">Participation Info</a>
+        <a href="#about-us" aria-label="About Us">About Us</a>
+        <a href="#inquiry-form" aria-label="Inquiry Form">Inquiry / Visitor Form</a>
+    </nav>
+
+    <div class="container">
+        <h2>About the Charity Run</h2>
+        <p>Charity Run 2024 aims to raise funds for the less fortunate in our community. Join us in this noble cause while enjoying a day of fun and excitement.</p>
+        <img src="charity_run.jpg" alt="Charity Run Image">
+    </div>
+</div>
+
+<!-- Program Events Page -->
+<div id="program-events" class="container">
+    <h2>Program Events</h2>
+    <p>Our charity run event includes a variety of activities that cater to all age groups and fitness levels.</p>
+    <ul>
+        <li>5km Family Run</li>
+        <li>10km Competitive Run</li>
+        <li>Kids' Fun Run</li>
+        <li>Live Music Performances</li>
+        <li>Food and Drinks Stalls</li>
+    </ul>
+</div>
+
+<!-- General Information Page -->
+<div id="general-info" class="container">
+    <h2>General Information</h2>
+    <h3>Venue Details</h3>
+    <p>The Charity Run 2024 will take place at Saigon Exhibition and Convention Center (SECC), Hochiminh City.</p>
+    <h3>Transportation and Parking</h3>
+    <ul>
+        <li>Free parking is available for all participants.</li>
+        <li>Bus routes: 38, 72, and 102 will stop near the venue.</li>
+    </ul>
+    <h3>Sponsors and Partners</h3>
+    <p>We are proud to be partnered with the following companies:</p>
+    <table>
+        <tr>
+            <th>Sponsor Name</th>
+            <th>Category</th>
+        </tr>
+        <tr>
+            <td>Company A</td>
+            <td>Main Sponsor</td>
+        </tr>
+        <tr>
+            <td>Company B</td>
+            <td>Co-Sponsor</td>
+        </tr>
+    </table>
+</div>
+
+<!-- Participation Information Page -->
+<div id="participation-info" class="container">
+    <h2>Participation Information</h2>
+    <h3>How to Participate</h3>
+    <p>You can participate as a runner, volunteer, or sponsor. Please choose the option that best fits you:</p>
+    <h4>Runners</h4>
+    <p>Registration fee: $20 (includes T-shirt and race bib).</p>
+    <h4>Volunteers</h4>
+    <p>Help us with organizing the event by signing up as a volunteer!</p>
+    <h4>Sponsors</h4>
+    <p>Contact us for sponsorship opportunities and support packages.</p>
+</div>
+
+<!-- About Us Page -->
+<div id="about-us" class="container">
+    <h2>About Us</h2>
+    <p>We are a non-profit organization dedicated to promoting health and community welfare. For more information, contact us:</p>
+    <p>Email: info@charityrun2024.com</p>
+    <p>Phone: +84 123 456 789</p>
+    <p>Follow us on:</p>
+    <a href="https://facebook.com" target="_blank">Facebook</a> |
+    <a href="https://instagram.com" target="_blank">Instagram</a> |
+    <a href="https://charityrun2024.blogspot.com" target="_blank">Blog</a>
+</div>
+
+<!-- Inquiry / Visitor Form Page -->
+<div id="inquiry-form" class="container">
+    <h2>Inquiry / Visitor Form</h2>
+    <form action="#" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" aria-label="Name"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" aria-label="Email"><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" aria-label="Message"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+<footer>
+    <p>&copy; 2024 Charity Run. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
